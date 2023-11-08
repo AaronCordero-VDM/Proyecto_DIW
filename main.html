@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="open">
     <header>
         <div class="divHead">
-                        <div class="backdrop"></div>
-                        <section></section>
-                        <div class="menu">
-                        <nav>
-                            <a href="#" class="link" style="animation-delay: 0.2s;">Home</a>
-                            <a href="#" class="link" style="animation-delay: 0.3s;">Recipes</a>
-                            <a href="#" class="link" style="animation-delay: 0.4s;">Favorites</a>
-                            <a href="#" class="link" style="animation-delay: 0.5s;">About Us</a>
-                            <a href="#" class="link" style="animation-delay: 0.6s;">Contact</a>
-                        </nav>
-                        </div>
-                
+            <div class="backdrop"></div>
+            <section></section>
+            <div class="menu">
+                <nav>
+                    <a href="#" class="link" style="animation-delay: 0.2s;">Home</a>
+                    <a href="#" class="link" style="animation-delay: 0.3s;">Recipes</a>
+                    <a href="#" class="link" style="animation-delay: 0.4s;">Favorites</a>
+                    <a href="#" class="link" style="animation-delay: 0.5s;">About Us</a>
+                    <a href="#" class="link" style="animation-delay: 0.6s;">Contact</a>
+                </nav>
+            </div>
+
             <nav class="cabecera">
                 <ul class="listaNav">
                     <li class="navMenu"><button class="menu-btn"><img src="img/menu.png" class="menuImg"></button></li>
@@ -36,19 +38,58 @@
                     <li class="nav"><a href="">Gravel/CX</a></li>
                     <div class="busqueda">
                         <form class="search-box">
-                            <input type="text" placeholder=" "/>
+                            <input type="text" placeholder=" " />
                             <button type="reset"></button>
                         </form>
-                    </div>                    
+                    </div>
                     <li class="sesion"><img src="img/inicio-de-sesion.png" class="imgNav"></li>
                     <li class="cesta"><img src="img/cesta.png" class="imgNav"></li>
                 </ul>
             </nav>
         </div>
-    </header>
-    <div class="carrousel">
 
+        <div class="carrousel">
+            <div class="container__slider">
+                <div class="container">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <div class="cards">
+                        <label class="card" for="item-1" id="selector-1">
+                            <img class="imgCarrousel" src="img/carretera.jpg">
+                        </label>
+                        <label class="card" for="item-2" id="selector-2">
+                            <img class="imgCarrousel" src="img/off-road.jpg">
+                        </label>
+                        <label class="card" for="item-3" id="selector-3">
+                            <img class="imgCarrousel" src="img/cx.jpg">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="noticias">
+        <table class="tabla">
+            <tr class="encabezados">
+                <th class="encabezado">Noticia carretera</th>
+                <th class="encabezado">Noticia Off-road</th>
+                <th class="encabezado">Noticia CX</th>
+            </tr>
+            <tr class="descripciones">
+                <td class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quam delectus
+                    aut tenetur ducimus recusandae odit saepe veniam assumenda quae placeat fugit, eligendi ea mollitia
+                    omnis. Ex sed similique numquam.</td>
+                <td class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laborum quam
+                    unde? Cupiditate harum facere rerum, rem id sapiente! Quam laborum odio, exercitationem consectetur
+                    numquam alias ipsa animi laudantium aliquam!</td>
+                <td class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at nam iste
+                    voluptatibus nisi earum ipsum dolorem dignissimos facere non natus dolor, a alias quia. Asperiores
+                    qui maiores ullam minus?</td>
+            </tr>
+        </table>
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
