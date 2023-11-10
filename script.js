@@ -17,3 +17,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(nextSlide, 4000); // Cambia de imagen cada 3 segundos
 });
+
